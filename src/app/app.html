@@ -28,6 +28,22 @@
     </ul>
   </section>
 
+<section class="technical-section">
+  <h2>Technical Proficiencies</h2>
+
+  @for (item of technicalProficiencies; track item.category) {
+    <div class="technical-category">
+      <h3>{{ item.category }}</h3>
+
+      <ul>
+        @for (tool of item.tools; track tool) {
+          <li>{{ tool }}</li>
+        }
+      </ul>
+    </div>
+  }
+</section>
+
   <section class="interaction">
     <h2>Angular Interaction</h2>
     <p>{{ message }}</p>

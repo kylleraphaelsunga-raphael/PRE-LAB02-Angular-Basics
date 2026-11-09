@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class ProfileCard {
   cardTitle = 'Welcome to My Profile';
-  description = 'Hi, I am Kylle! I am a college student currently exploring web development and expanding my knowledge in programming. I enjoy learning new technologies, improving my skills, and creating projects that help me grow as a future developer.';}
+  description = 'I am a college student pursuing Information Technology with a focus on Web Development. My goal is to become a skilled web developer who can create responsive, user-friendly, and functional websites and applications. I am interested in learning how websites work, exploring different programming languages, and understanding how technologies are used to solve real-world problems. I want to continuously improve my skills in frontend and backend development by working on different projects and gaining practical experience. I also aim to become more confident in programming, problem-solving, and working with modern web development tools.';
+}

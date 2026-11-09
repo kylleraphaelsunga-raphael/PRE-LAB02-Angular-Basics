@@ -17,12 +17,33 @@ export class App {
 
   profile = 'I am a college student with an interest in web development and technology. I enjoy exploring new ideas, learning programming languages, and developing my skills in creating websites and web applications. I am always willing to learn and improve as I work toward becoming a better developer.';
 
-  skills = [
-    'HTML and CSS',
-    'JavaScript',
-    'TypeScript',
-    'Angular'
-  ];
+skills = [
+  'HTML and CSS',
+  'JavaScript',
+  'TypeScript',
+  'Angular',
+  'Web Design',
+  'Programming',
+  'Problem-Solving',
+  'Database Basics',
+  'Teamwork',
+  'Communication'
+];
+
+technicalProficiencies = [
+  {
+    category: 'Frontend Development',
+    tools: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Angular']
+  },
+  {
+    category: 'Backend Development',
+    tools: ['Node.js', 'Express.js']
+  },
+  {
+    category: 'Database and Development Tools',
+    tools: ['MongoDB', 'Git', 'GitHub', 'Visual Studio Code']
+  }
+];
 
   message = 'Welcome to my profile!';
   clickCount = 0;
