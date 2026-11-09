@@ -1,0 +1,173 @@
+.resume {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 36px;
+  color: #334155;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+  background: #ffffff;
+}
+
+/* Header */
+.intro {
+  text-align: center;
+  border-bottom: 2px solid #dbeafe;
+  padding-bottom: 28px;
+  margin-bottom: 32px;
+}
+
+.subtitle {
+  color: #64748b;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+}
+
+.intro h1 {
+  margin: 0;
+  color: #172554;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin-top: 12px;
+  color: #64748b;
+  font-size: 0.9rem;
+  overflow-wrap: anywhere;
+}
+
+.contact a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+section {
+  margin: 30px 0;
+}
+
+section h2 {
+  color: #172554;
+  border-bottom: 2px solid #dbeafe;
+  padding-bottom: 8px;
+  margin-bottom: 14px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+section p {
+  color: #475569;
+  text-align: justify;
+}
+
+/* Skills */
+ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 24px;
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  background: #f1f5f9;
+  border-left: 4px solid #1e3a8a;
+  border-radius: 6px;
+  padding: 10px 14px;
+  color: #1e293b;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+ul li:hover {
+  background: #dbeafe;
+}
+
+/* Angular Interaction */
+.interaction {
+  padding: 22px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  background: #f8fafc;
+}
+
+.interaction h2 {
+  margin-top: 0;
+}
+
+.interaction p {
+  text-align: left;
+}
+
+button {
+  border: none;
+  border-radius: 7px;
+  padding: 11px 22px;
+  background: #1e3a8a;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #172554;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+button:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 3px;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #dbeafe;
+  margin-top: 40px;
+  padding-top: 18px;
+  text-align: center;
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .resume {
+    margin: 12px;
+    padding: 20px;
+  }
+
+  .intro h1 {
+    font-size: 1.7rem;
+  }
+
+  .contact {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  ul {
+    grid-template-columns: 1fr;
+  }
+
+  section h2 {
+    font-size: 1.05rem;
+  }
+}

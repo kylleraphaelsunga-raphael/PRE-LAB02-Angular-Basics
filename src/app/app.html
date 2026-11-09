@@ -1,0 +1,44 @@
+<main class="resume">
+
+  <header class="intro">
+    <p class="subtitle">PERSONAL PORTFOLIO</p>
+    <h1>{{ fullName }}</h1>
+
+    <p class="contact">
+      <span>{{ location }}</span>
+      <span>{{ phone }}</span>
+      <a [href]="'mailto:' + email">{{ email }}</a>
+    </p>
+  </header>
+
+  <section class="profile-section">
+    <h2>Personal Profile</h2>
+    <p>{{ profile }}</p>
+  </section>
+
+  <app-profile-card></app-profile-card>
+
+  <section class="skills-section">
+    <h2>Key Skills</h2>
+
+    <ul>
+      @for (skill of skills; track skill) {
+        <li>{{ skill }}</li>
+      }
+    </ul>
+  </section>
+
+  <section class="interaction">
+    <h2>Angular Interaction</h2>
+    <p>{{ message }}</p>
+
+    <button (click)="showMessage()">
+      Click Me
+    </button>
+  </section>
+
+  <footer>
+    <p>© 2026 {{ fullName }}. All rights reserved.</p>
+  </footer>
+
+</main>
