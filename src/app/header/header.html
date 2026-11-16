@@ -1,0 +1,14 @@
+
+<header class="intro">
+  <h1>{{ fullName() }}</h1>
+  <p>
+    {{ location() }} |
+    {{ phone() }} |
+    <a [href]="'mailto:' + email()">{{ email() }}</a>
+  </p>
+</header>
+
+<section>
+  <h2 class="section-title">Personal Profile</h2>
+  <p>{{ profile() }}</p>
+</section>

@@ -1,0 +1,75 @@
+
+/* Technical Proficiencies Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  background: #ffffff;
+  border: 1px solid #dbeafe;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 13px 16px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+th {
+  background: #eff6ff;
+  color: #172554;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+td {
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:hover {
+  background: #f8fafc;
+}
+
+/* Proficiency Level Badges */
+.level {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: #dbeafe;
+  color: #1e3a8a;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+/* Copyright */
+.copyright {
+  margin-top: 32px;
+  padding-top: 18px;
+  border-top: 1px solid #dbeafe;
+  color: #64748b;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* Mobile Responsive Table */
+@media (max-width: 600px) {
+  th,
+  td {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+
+  .level {
+    padding: 3px 9px;
+    font-size: 0.78rem;
+  }
+}
