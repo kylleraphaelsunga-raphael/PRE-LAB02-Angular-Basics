@@ -1,51 +1,127 @@
 
-/* Header Section */
+/* Hero Header */
 .intro {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
   text-align: center;
-  border-bottom: 2px solid #dbeafe;
-  padding-bottom: 28px;
-  margin-bottom: 32px;
+  padding: 58px 30px 48px;
+  margin: -48px -48px 45px;
+
+  color: white;
+  background:
+    radial-gradient(ellipse at 85% 10%, rgba(59, 130, 246, 0.42), transparent 40%),
+    radial-gradient(ellipse at 10% 100%, rgba(14, 165, 233, 0.20), transparent 40%),
+    linear-gradient(135deg, #0f1f46, #172554 55%, #1e40af);
+
+  border-radius: 0 0 24px 24px;
 }
 
+/* Decorative Background Shapes */
+.intro::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 280px;
+  height: 280px;
+  top: -150px;
+  right: -60px;
+
+  border: 1px solid rgba(147, 197, 253, 0.2);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 30px rgba(147, 197, 253, 0.04),
+    0 0 0 65px rgba(147, 197, 253, 0.03);
+}
+
+.intro::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 120px;
+  height: 120px;
+  left: 8%;
+  bottom: -70px;
+
+  border: 1px solid rgba(147, 197, 253, 0.25);
+  border-radius: 50%;
+}
+
+/* Name */
 .intro h1 {
   margin: 0;
-  color: #172554;
-  font-size: 2.3rem;
-  font-weight: 700;
-  letter-spacing: 0.5px;
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 850;
+  letter-spacing: -1.3px;
+  line-height: 1.25;
+
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.16);
 }
 
+/* Contact Information */
 .intro p {
-  margin-top: 12px;
-  color: #64748b;
-  font-size: 0.95rem;
-  line-height: 1.8;
+  margin-top: 22px;
+  color: #cbdcf8;
+  font-size: 0.91rem;
+  line-height: 2;
   overflow-wrap: anywhere;
 }
 
 /* Email Link */
 .intro a {
-  color: #1d4ed8;
+  color: #93c5fd;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 650;
+  transition: color 0.2s ease;
 }
 
 .intro a:hover {
+  color: #ffffff;
   text-decoration: underline;
 }
 
-/* Mobile Responsive Design */
+/* Personal Profile Section */
+.intro + section {
+  padding: 24px 26px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: linear-gradient(135deg, #ffffff, #f6f9ff);
+  box-shadow: 0 5px 18px rgba(15, 35, 80, 0.04);
+}
+
+.intro + section p {
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .intro {
+    margin: -32px -26px 34px;
+    padding: 48px 24px 40px;
+  }
+}
+
 @media (max-width: 600px) {
   .intro {
-    padding-bottom: 22px;
-    margin-bottom: 26px;
+    margin: -23px -18px 30px;
+    padding: 43px 20px 36px;
+    border-radius: 0 0 16px 16px;
   }
 
   .intro h1 {
-    font-size: 1.7rem;
+    font-size: 1.85rem;
+    letter-spacing: -0.7px;
   }
 
   .intro p {
-    font-size: 0.85rem;
+    font-size: 0.83rem;
+  }
+
+  .intro + section {
+    padding: 19px;
   }
 }
